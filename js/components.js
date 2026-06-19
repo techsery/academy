@@ -18,6 +18,7 @@
                path.endsWith('/academy/') ||
                path === '';
   var isCareerGuidance = path.includes('career-guidance');
+  var isFounder        = path.includes('founder');
 
   // Link prefix: empty on home (uses same-page anchors), 'index.html' elsewhere
   var p        = isHome ? '' : 'index.html';
@@ -49,6 +50,7 @@
     '      <li><a href="' + p + '#courses"'       + (isHome            ? ' class="active"' : '') + '>Courses</a></li>',
     '      <li><a href="' + p + '#second-innings">SecondInnings</a></li>',
     '      <li><a href="' + p + '#career-guidance"' + (isCareerGuidance ? ' class="active"' : '') + '>Career Guidance</a></li>',
+    '      <li><a href="founder.html"'         + (isFounder         ? ' class="active"' : '') + '>Meet the Founder</a></li>',
     '      <li><a href="' + p + '#why-techsery">About</a></li>',
     '      <li><a href="' + p + '#featured-course" class="nav-cta">Enroll Now</a></li>',
     '    </ul>',
