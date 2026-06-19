@@ -225,7 +225,7 @@
 
 .fd-about-grid {
   display: grid;
-  grid-template-columns: 1fr 340px;
+  grid-template-columns: 1fr;
   gap: 48px;
   align-items: start;
 }
@@ -609,9 +609,7 @@
     margin: 0 auto;
   }
 
-  .fd-about-grid {
-    grid-template-columns: 1fr;
-  }
+  /* .fd-about-grid single-column already set globally */
 }
 
 @media (max-width: 600px) {
