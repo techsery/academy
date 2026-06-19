@@ -967,14 +967,7 @@ h1, h2, h3, h4 {
 }
 .footer-bottom a:hover { color: #fff; }
 
-/* ---------- Limerick Session Section ---------- */
-.limerick-session {
-  background: var(--bg-soft);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  padding: 72px 0;
-}
-
+/* ---------- Session Section ---------- */
 .ls-inner {
   display: grid;
   grid-template-columns: 1fr 380px;
