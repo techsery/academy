@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="techsery — where tech aspirations are nurtured. Practical, career-focused IT training for students and professionals." />
+  <meta property="og:title" content="techsery — where tech aspirations are nurtured" />
+  <meta property="og:description" content="Practical, hands-on IT training that bridges the gap between college theory and real-world careers." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://techsery.com" />
+  <title>techsery — where tech aspirations are nurtured</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ======================================================
+       NAVIGATION
+  ====================================================== -->
+  <div id="site-nav"></div>
+
+  <!-- ======================================================
+       HERO
+  ====================================================== -->
+  <header class="hero" aria-labelledby="hero-heading">
+    <div class="container">
+      <div class="hero-content">
+        <h1 id="hero-heading">
+          Where <span class="highlight">Tech Aspirations</span><br />
+          Are Nurtured
+        </h1>
+
+        <p class="hero-sub">
+          Are you a tech graduate in Limerick struggling to land interviews?
+          Join our free in-person chat this Saturday — practical career
+          advice from an industry professional, no fluff.
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn btn-primary" onclick="document.getElementById('techChatModal').classList.add('open')">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            Reserve Your Spot
+          </button>
+          <a href="#courses" class="btn btn-ghost">Explore Courses</a>
+        </div>
+
+        <div class="hero-stats" aria-label="Key highlights">
+          <div class="hero-stat">
+            <strong>Free</strong>
+            <span>Entry</span>
+          </div>
+          <div class="hero-stat">
+            <strong>Sat</strong>
+            <span>27 June 2026</span>
+          </div>
+          <div class="hero-stat">
+            <strong>4</strong>
+            <span>Career Topics</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Limerick Tech Chat session card -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-card">
+          <div class="hero-card-header">
+            <div class="hero-card-icon">🎙️</div>
+            <div>
+              <div class="hero-card-title">Limerick Tech Chat</div>
+              <div class="hero-card-sub">Free Career Guidance Session</div>
+            </div>
+          </div>
+          <div style="padding:0 1rem 0.5rem">
+            <span class="badge badge-featured">⭐ Featured · Enrolling Now</span>
+          </div>
+
+          <div class="hero-card-week">
+            <span class="wk-num">🪪</span>
+            Personal Branding for Tech Professionals
+          </div>
+          <div class="hero-card-week">
+            <span class="wk-num">📄</span>
+            Tailoring Your Resume to the Role
+          </div>
+          <div class="hero-card-week">
+            <span class="wk-num">🔍</span>
+            Beyond One Job Portal — Find Hidden Roles
+          </div>
+          <div class="hero-card-week">
+            <span class="wk-num">🤝</span>
+            Promote Networking — Get Referred, Not Just Applied
+          </div>
+          <div class="hero-card-footer">
+            <div class="hero-card-price">
+              <span class="label">📍 Online</span>
+              <span class="amount">Sat, 27 June</span>
+            </div>
+            <button class="btn btn-primary btn-sm" onclick="document.getElementById('techChatModal').classList.add('open')">Join Free</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================
+       TRUST BAR
+  ====================================================== -->
+  <div class="trust-bar" aria-label="Session highlights">
+    <div class="container">
+      <div class="trust-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        Free In-Person Session
+      </div>
+      <div class="trust-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        Saturday, 27 June · Limerick
+      </div>
+      <div class="trust-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        By 12+ Years IT Professional
+      </div>
+      <div class="trust-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        4 Practical Career Topics
+      </div>
+      <div class="trust-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        Open Q&amp;A
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================
+       LIMERICK TECH CHAT SESSION
+  ====================================================== -->
+  <section class="limerick-session" id="limerick-session" aria-labelledby="ls-heading">
+    <div class="container">
+      <div class="ls-inner">
+
+        <div class="ls-content">
+          <h2 id="ls-heading">Limerick Tech Chat</h2>
+          <p class="ls-lead">
+            A free, informal career guidance session for tech graduates and
+            aspirants in Limerick. If you've been applying for jobs and not
+            hearing back — this session is for you.
+          </p>
+
+          <div class="ls-actions">
+            <a href="career-guidance.html" class="btn btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              View Full Session Content
+            </a>
+            <button class="btn btn-outline ls-btn-outline" onclick="document.getElementById('techChatModal').classList.add('open')">
+              Reserve Your Spot
+            </button>
+          </div>
+        </div>
+
+        <div class="ls-details-panel" aria-label="Event details">
+          <div class="ls-detail-card">
+            <div class="ls-bootcamp-teaser">
+              <span class="ls-teaser-label">Coming September 2026</span>
+              <p>Techprashan - Frontend Portfolio — 6-week live online program launching soon.</p>
+              <a href="#featured-course">Learn more →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       COURSES SECTION
+  ====================================================== -->
+  <section class="courses-section" id="courses" aria-labelledby="courses-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" style="background:#d1fae5;color:#065f46;">Our Courses</span>
+        <h2 class="section-title" id="courses-heading">Find the Right Track for You</h2>
+        <p class="section-sub">
+          From first steps in tech to advanced specialisations — structured programs
+          designed around real outcomes.
+        </p>
+      </div>
+
+      <!-- Category filter tabs -->
+      <div class="category-tabs" role="tablist" aria-label="Course categories">
+        <button class="cat-tab active" role="tab" aria-selected="true" data-filter="all">
+          <span class="cat-icon">🌱🪴🌳</span> All
+        </button>
+        <button class="cat-tab" role="tab" aria-selected="false" data-filter="basics">
+          <span class="cat-icon">🌱</span> Basics
+        </button>
+        <button class="cat-tab" role="tab" aria-selected="false" data-filter="advanced">
+          <span class="cat-icon">🪴</span> Advanced
+        </button>
+        <button class="cat-tab" role="tab" aria-selected="false" data-filter="expert">
+          <span class="cat-icon">🌳</span> Expert
+        </button>
+      </div>
+
+      <!-- Course cards -->
+      <div class="courses-grid" role="list">
+
+        <!-- ── Featured: Techprashan - Frontend Portfolio ── -->
+        <article class="course-card featured" role="listitem" id="featured-course" data-category="basics">
+          <div class="course-card-banner" style="background:linear-gradient(90deg,#16a34a,#22c55e);"></div>
+          <div class="course-card-body">
+            <div class="course-meta">
+              <span class="badge badge-basics">Basics</span>
+              <span class="course-duration">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                6 Weeks · Weekends
+              </span>
+            </div>
+            <h3>Techprashan - Frontend Portfolio</h3>
+            <p>
+              Learn HTML, CSS &amp; JavaScript through live hands-on sessions. End with
+              a real developer portfolio hosted on GitHub Pages — your first digital
+              resume that recruiters actually look for.
+            </p>
+            <div class="course-card-footer">
+              <div class="course-price">&#8377; at launch</div>
+              <button class="btn btn-primary btn-sm" onclick="document.getElementById('interestModal').classList.add('open')">Register Interest</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── Advanced: Connecting Dots ── -->
+        <article class="course-card" role="listitem" data-category="advanced">
+          <div class="course-card-banner" style="background:linear-gradient(90deg,#2563eb,#60a5fa);"></div>
+          <div class="course-card-body">
+            <div class="course-meta">
+              <span class="badge badge-advanced">Advanced</span>
+              <span class="course-duration">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                6 Weeks · Weekends
+              </span>
+            </div>
+            <h3>Connecting Dots — Frontend to Backend</h3>
+            <p>
+              Go beyond the browser. Learn how a real web application is designed
+              end-to-end — from UI to server to database. Walk away with a fully
+              working full-stack project on GitHub that demonstrates system-level
+              thinking to any interviewer.
+            </p>
+            <div class="course-card-footer">
+              <div class="course-price">&#8377; at launch</div>
+              <button class="btn btn-primary btn-sm" onclick="document.getElementById('connectingDotsModal').classList.add('open')">Register Interest</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── Expert: 1 → N Scale ── -->
+        <article class="course-card" role="listitem" data-category="expert">
+          <div class="course-card-banner" style="background:linear-gradient(90deg,#7c3aed,#a78bfa);"></div>
+          <div class="course-card-body">
+            <div class="course-meta">
+              <span class="badge badge-expert">Expert</span>
+              <span class="course-duration">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                8 Weeks · Weekends
+              </span>
+            </div>
+            <h3>1 &#8594; N Scale</h3>
+            <p>
+              DevOps is a culture, not a toolchain. Tools get replaced — practices
+              and mindsets don't. Learn the engineering culture behind continuous
+              delivery, collaboration, and safe releases so you can ship with
+              confidence at any scale.
+            </p>
+            <div class="course-card-footer">
+              <div class="course-price">&#8377; at launch</div>
+              <button class="btn btn-primary btn-sm" onclick="document.getElementById('devopsModal').classList.add('open')">Register Interest</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── Expert: Applities → SRE ── -->
+        <article class="course-card" role="listitem" data-category="expert">
+          <div class="course-card-banner" style="background:linear-gradient(90deg,#0f172a,#334155);"></div>
+          <div class="course-card-body">
+            <div class="course-meta">
+              <span class="badge badge-expert">Expert</span>
+              <span class="course-duration">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                8 Weeks · Weekends
+              </span>
+            </div>
+            <h3>Applities</h3>
+            <p>
+              Turn incidents from panic into routine. Learn Site Reliability
+              Engineering practices — Observability, Scalability, and Reliability —
+              so your systems stay up and your on-call shifts become boring.
+            </p>
+            <div class="course-card-footer">
+              <div class="course-price">&#8377; at launch</div>
+              <button class="btn btn-primary btn-sm" onclick="document.getElementById('sreModal').classList.add('open')">Register Interest</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Empty state -->
+        <div class="courses-empty" id="coursesEmpty" style="display:none;">
+          <p>🛠️ Course content is being prepared for you. Check back soon!</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       SECOND INNINGS SECTION
+  ====================================================== -->
+  <section class="second-innings" id="second-innings" aria-labelledby="si-heading">
+    <div class="container">
+      <div class="si-text">
+        <span class="section-label si-label">SecondInnings ♻️</span>
+        <h2 class="section-title si-title" id="si-heading">
+          Your Career Doesn't Have an Expiry Date
+        </h2>
+        <p class="si-sub">
+          Specially designed short-duration programs for homemakers and career-break
+          professionals who want to re-enter the tech world — with confidence, using
+          today's tools and real-world skills.
+        </p>
+      </div>
+
+      <div class="si-cards" aria-label="SecondInnings courses">
+        <div class="si-card">
+          <div class="si-card-icon">🤖</div>
+          <h4>AI Basics — Demystifying the Buzz</h4>
+          <p>LLMs, Agents, Agentic Workflows — explained in plain language. No jargon, no overwhelm.</p>
+          <button class="btn btn-primary btn-sm" onclick="document.getElementById('aiBasicsModal').classList.add('open')">Register Interest</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       CAREER GUIDANCE SECTION
+  ====================================================== -->
+  <section class="career-section" id="career-guidance" aria-labelledby="cg-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" style="background:#e0f2fe;color:#0369a1;">Career Guidance</span>
+        <h2 class="section-title" id="cg-heading">Go Beyond Technical Skills</h2>
+        <p class="section-sub">
+          Technical skills get you interviews. These skills get you the job — and
+          help you grow once you're there.
+        </p>
+      </div>
+
+      <div class="career-grid" aria-label="Career guidance modules">
+        <a href="career-guidance.html#personal-branding" class="career-card">
+          <div class="career-icon">🪪</div>
+          <h4>Personal Branding</h4>
+        </a>
+        <a href="career-guidance.html#resume-tailoring" class="career-card">
+          <div class="career-icon">📄</div>
+          <h4>Tailoring Your Resume</h4>
+        </a>
+        <a href="career-guidance.html#job-portals" class="career-card">
+          <div class="career-icon">🔍</div>
+          <h4>Beyond One Job Portal</h4>
+        </a>
+        <a href="career-guidance.html#networking" class="career-card">
+          <div class="career-icon">🤝</div>
+          <h4>Promote Networking</h4>
+        </a>
+
+      </div>
+
+      <div class="career-cta">
+        <a href="career-guidance.html" class="btn btn-outline">Explore Career Guidance →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       WHY TECHSERY
+  ====================================================== -->
+  <section class="why-section" id="why-techsery" aria-labelledby="why-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" style="background:#fef3c7;color:#92400e;">Why techsery?</span>
+        <h2 class="section-title" id="why-heading">Learning That Actually Prepares You</h2>
+        <p class="section-sub">
+          Not just another course platform. We build the bridge between where you
+          are today and where industry expects you to be.
+        </p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">🏭</div>
+          <h4>Industry-Led Teaching</h4>
+          <p>Learn from an active IT professional with 12+ years of real-world experience at top-tier companies.
+             <a href="founder.html">Meet the trainer →</a></p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🛠️</div>
+          <h4>Project-First Approach</h4>
+          <p>Every concept is immediately applied in hands-on projects. You leave
+             with working code, not just notes.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">📅</div>
+          <h4>Weekend-Friendly Schedule</h4>
+          <p>Live classes only on weekends. Designed for students and professionals
+             who cannot leave their weekday commitments.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🌱</div>
+          <h4>Your First Step in Tech</h4>
+          <p>techsery is your tech nursery — the safe, guided space to take your
+             first confident steps into the technology world.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       CTA BANNER
+  ====================================================== -->
+  <section class="cta-banner" aria-labelledby="cta-heading">
+    <div class="container">
+      <h2 id="cta-heading">Ready to Take Your First Step?</h2>
+      <p>
+        Join the upcoming <strong>Limerick Tech Chat</strong>
+        this Saturday. Seats are limited.
+      </p>
+      <div class="cta-actions">
+        <button class="btn btn-primary" onclick="document.getElementById('techChatModal').classList.add('open')">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          Register Your Interest
+        </button>
+        <a href="#courses" class="btn btn-outline">See All Courses</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       FOOTER
+  ====================================================== -->
+  <div id="site-footer"></div>
+
+  <!-- ======================================================
+       SCRIPT — Shared components + category filter
+  ====================================================== -->
+  <script src="js/components.js"></script>
+  <script>
+    // ── Course category filter tabs ──
+    const catTabs    = document.querySelectorAll('.cat-tab');
+    const courseCards = document.querySelectorAll('.courses-grid .course-card');
+
+    catTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Update tab state
+        catTabs.forEach(t => {
+          t.classList.remove('active');
+          t.setAttribute('aria-selected', 'false');
+        });
+        tab.classList.add('active');
+        tab.setAttribute('aria-selected', 'true');
+
+        const filter = tab.dataset.filter;
+
+        // Show / hide cards
+        let visible = 0;
+        courseCards.forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.style.display = '';
+            card.style.animation = 'fadeIn .3s ease forwards';
+            visible++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        // Show empty state when no cards match
+        document.getElementById('coursesEmpty').style.display = visible === 0 ? '' : 'none';
+      });
+    });
+  </script>
+
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+
+  <!-- ======================================================
+       TECH CHAT ENROLLMENT MODAL
+  ====================================================== -->
+  <div class="modal-overlay" id="techChatModal" role="dialog" aria-modal="true" aria-labelledby="techChatModalTitle">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2 id="techChatModalTitle">Reserve Your Spot — Limerick Tech Chat</h2>
+        <button class="modal-close" onclick="document.getElementById('techChatModal').classList.remove('open')" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-loader" id="techChatFormLoader">
+        <div class="modal-spinner"></div>
+        <p>Loading form&hellip;</p>
+      </div>
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSf1AuiK_y97QD5kKgovoYYYQsAbdeGdjlh0hVMuYjYq0dOFMg/viewform?embedded=true"
+        id="techChatFormIframe"
+        width="100%"
+        height="700"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        title="Limerick Tech Chat Enrollment Form"
+        style="display:none"
+        onload="document.getElementById('techChatFormLoader').style.display='none'; this.style.display='block';">Loading&hellip;</iframe>
+    </div>
+  </div>
+
+  <!-- ======================================================
+       REGISTER INTEREST MODAL
+  ====================================================== -->
+  <div class="modal-overlay" id="interestModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2 id="modalTitle">Register Interest — Techprashan - Frontend Portfolio</h2>
+        <button class="modal-close" onclick="document.getElementById('interestModal').classList.remove('open')" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-loader" id="formLoader">
+        <div class="modal-spinner"></div>
+        <p>Loading form&hellip;</p>
+      </div>
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSd2NSrIZM_IWFO4gRy56DG_UtGu91vDkzZFvsgvsNdF11oqsA/viewform?embedded=true"
+        id="interestFormIframe"
+        width="100%"
+        height="700"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        title="Register Interest Form"
+        style="display:none"
+        onload="document.getElementById('formLoader').style.display='none'; this.style.display='block';">Loading&hellip;</iframe>
+    </div>
+  </div>
+
+  <!-- ======================================================
+       SRE (APPLITIES → SRE) REGISTER INTEREST MODAL
+  ====================================================== -->
+  <div class="modal-overlay" id="sreModal" role="dialog" aria-modal="true" aria-labelledby="sreModalTitle">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2 id="sreModalTitle">Register Interest — Applities &#8594; SRE</h2>
+        <button class="modal-close" onclick="document.getElementById('sreModal').classList.remove('open')" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-loader" id="sreFormLoader">
+        <div class="modal-spinner"></div>
+        <p>Loading form&hellip;</p>
+      </div>
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLScYF1RtclwMhn8v6r4dukyYfflILkAecXz9mNdJFXiZZmByDg/viewform?embedded=true"
+        id="sreFormIframe"
+        width="100%"
+        height="700"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        title="Applities to SRE Register Interest Form"
+        style="display:none"
+        onload="document.getElementById('sreFormLoader').style.display='none'; this.style.display='block';">Loading&hellip;</iframe>
+    </div>
+  </div>
+
+  <!-- ======================================================
+       DEVOPS (1 → N SCALE) REGISTER INTEREST MODAL
+  ====================================================== -->
+  <div class="modal-overlay" id="devopsModal" role="dialog" aria-modal="true" aria-labelledby="devopsModalTitle">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2 id="devopsModalTitle">Register Interest — 1 &#8594; N Scale</h2>
+        <button class="modal-close" onclick="document.getElementById('devopsModal').classList.remove('open')" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-loader" id="devopsFormLoader">
+        <div class="modal-spinner"></div>
+        <p>Loading form&hellip;</p>
+      </div>
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLScFOS_igOWlRHlgqVXoUxEj9ASATqdUfkpp-piH3JFqKnP2BQ/viewform?embedded=true"
+        id="devopsFormIframe"
+        width="100%"
+        height="700"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        title="1 to N Scale Register Interest Form"
+        style="display:none"
+        onload="document.getElementById('devopsFormLoader').style.display='none'; this.style.display='block';">Loading&hellip;</iframe>
+    </div>
+  </div>
+
+  <!-- ======================================================
+       CONNECTING DOTS REGISTER INTEREST MODAL
+  ====================================================== -->
+  <div class="modal-overlay" id="connectingDotsModal" role="dialog" aria-modal="true" aria-labelledby="connectingDotsModalTitle">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2 id="connectingDotsModalTitle">Register Interest — Connecting Dots</h2>
+        <button class="modal-close" onclick="document.getElementById('connectingDotsModal').classList.remove('open')" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-loader" id="connectingDotsFormLoader">
+        <div class="modal-spinner"></div>
+        <p>Loading form&hellip;</p>
+      </div>
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSfVHQtbOzj3T-nqljWJQc27Lb6FzakTXbwIxmW9TgxDuJGa1w/viewform?embedded=true"
+        id="connectingDotsFormIframe"
+        width="100%"
+        height="700"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        title="Connecting Dots Register Interest Form"
+        style="display:none"
+        onload="document.getElementById('connectingDotsFormLoader').style.display='none'; this.style.display='block';">Loading&hellip;</iframe>
+    </div>
+  </div>
+
+  <!-- ======================================================
+       AI BASICS REGISTER INTEREST MODAL
+  ====================================================== -->
+  <div class="modal-overlay" id="aiBasicsModal" role="dialog" aria-modal="true" aria-labelledby="aiBasicsModalTitle">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2 id="aiBasicsModalTitle">Register Interest — AI Basics</h2>
+        <button class="modal-close" onclick="document.getElementById('aiBasicsModal').classList.remove('open')" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-loader" id="aiBasicsFormLoader">
+        <div class="modal-spinner"></div>
+        <p>Loading form&hellip;</p>
+      </div>
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSf_5gGs7QFr8C3uAUpn9eOQnZPuhVRYc0OwrxQ82a2x8tqxDw/viewform?embedded=true"
+        id="aiBasicsFormIframe"
+        width="100%"
+        height="700"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        title="AI Basics Register Interest Form"
+        style="display:none"
+        onload="document.getElementById('aiBasicsFormLoader').style.display='none'; this.style.display='block';">Loading&hellip;</iframe>
+    </div>
+  </div>
+
+  <script>
+    // Close modals on backdrop click
+    ['techChatModal', 'interestModal', 'connectingDotsModal', 'devopsModal', 'sreModal', 'aiBasicsModal'].forEach(function(id) {
+      document.getElementById(id).addEventListener('click', function(e) {
+        if (e.target === this) this.classList.remove('open');
+      });
+    });
+    // Close modals on Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        document.getElementById('techChatModal').classList.remove('open');
+        document.getElementById('interestModal').classList.remove('open');
+        document.getElementById('connectingDotsModal').classList.remove('open');
+        document.getElementById('devopsModal').classList.remove('open');
+        document.getElementById('sreModal').classList.remove('open');
+        document.getElementById('aiBasicsModal').classList.remove('open');
+      }
+    });
+  </script>
+
+</body>
+</html>
