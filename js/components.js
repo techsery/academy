@@ -47,7 +47,7 @@
     '    </button>',
     '',
     '    <ul class="nav-links" id="navLinks" role="list">',
-    '      <li><a href="' + p + '#courses"'       + (isHome            ? ' class="active"' : '') + '>Courses</a></li>',
+    '      <li><a href="' + p + '#courses">Courses</a></li>',
     '      <li><a href="' + p + '#second-innings">SecondInnings</a></li>',
     '      <li><a href="' + p + '#career-guidance"' + (isCareerGuidance ? ' class="active"' : '') + '>Career Guidance</a></li>',
     '      <li><a href="founder.html"'         + (isFounder         ? ' class="active"' : '') + '>Meet the Founder</a></li>',
