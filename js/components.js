@@ -81,7 +81,6 @@
     '          <li><a href="index.html#courses">Basics</a></li>',
     '          <li><a href="index.html#courses">Advanced</a></li>',
     '          <li><a href="index.html#courses">Expert</a></li>',
-    '          <li><a href="index.html#featured-course">Code to Career Bootcamp</a></li>',
     '        </ul>',
     '      </div>',
     '',
