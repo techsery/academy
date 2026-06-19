@@ -27,11 +27,6 @@
   <header class="hero" aria-labelledby="hero-heading">
     <div class="container">
       <div class="hero-content">
-        <div class="hero-badge">
-          <span class="dot"></span>
-          Upcoming Event · Limerick, Ireland
-        </div>
-
         <h1 id="hero-heading">
           Where <span class="highlight">Tech Aspirations</span><br />
           Are Nurtured
@@ -44,10 +39,10 @@
         </p>
 
         <div class="hero-actions">
-          <a href="#limerick-session" class="btn btn-primary">
+          <button class="btn btn-primary" onclick="document.getElementById('techChatModal').classList.add('open')">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             Reserve Your Spot
-          </a>
+          </button>
           <a href="#courses" class="btn btn-ghost">Explore Courses</a>
         </div>
 
@@ -58,7 +53,7 @@
           </div>
           <div class="hero-stat">
             <strong>Sat</strong>
-            <span>20 June 2026</span>
+            <span>27 June 2026</span>
           </div>
           <div class="hero-stat">
             <strong>4</strong>
@@ -77,6 +72,9 @@
               <div class="hero-card-sub">Free Career Guidance Session</div>
             </div>
           </div>
+          <div style="padding:0 1rem 0.5rem">
+            <span class="badge badge-featured">⭐ Featured · Enrolling Now</span>
+          </div>
 
           <div class="hero-card-week">
             <span class="wk-num">🪪</span>
@@ -94,17 +92,12 @@
             <span class="wk-num">🤝</span>
             Promote Networking — Get Referred, Not Just Applied
           </div>
-          <div class="hero-card-week" style="opacity:.6;">
-            <span class="wk-num">💬</span>
-            Open Q&amp;A — Bring Your Questions
-          </div>
-
           <div class="hero-card-footer">
             <div class="hero-card-price">
-              <span class="label">📍 Limerick, Ireland</span>
-              <span class="amount">Sat, 20 June</span>
+              <span class="label">📍 Online</span>
+              <span class="amount">Sat, 27 June</span>
             </div>
-            <a href="#limerick-session" class="btn btn-primary btn-sm">Join Free</a>
+            <button class="btn btn-primary btn-sm" onclick="document.getElementById('techChatModal').classList.add('open')">Join Free</button>
           </div>
         </div>
       </div>
@@ -122,11 +115,11 @@
       </div>
       <div class="trust-item">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-        Saturday, 20 June · Limerick
+        Saturday, 27 June · Limerick
       </div>
       <div class="trust-item">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-        Hosted by 11-Year IT Professional
+        By 12+ Years IT Professional
       </div>
       <div class="trust-item">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
@@ -134,7 +127,7 @@
       </div>
       <div class="trust-item">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-        Open Q&amp;A Included
+        Open Q&amp;A
       </div>
     </div>
   </div>
@@ -147,10 +140,6 @@
       <div class="ls-inner">
 
         <div class="ls-content">
-          <div class="ls-eyebrow">
-            <span class="ls-live-dot"></span>
-            Upcoming Free Event · Limerick, Ireland
-          </div>
           <h2 id="ls-heading">Limerick Tech Chat</h2>
           <p class="ls-lead">
             A free, informal career guidance session for tech graduates and
@@ -158,92 +147,19 @@
             hearing back — this session is for you.
           </p>
 
-          <ul class="ls-agenda" aria-label="Session agenda">
-            <li>
-              <span class="ls-agenda-icon">🪪</span>
-              <div>
-                <strong>Personal Branding</strong>
-                <span>GitHub, LinkedIn, Medium &amp; short-form video</span>
-              </div>
-            </li>
-            <li>
-              <span class="ls-agenda-icon">📄</span>
-              <div>
-                <strong>Tailoring Your Resume</strong>
-                <span>How to tweak your CV for each role &amp; use AI to speed it up</span>
-              </div>
-            </li>
-            <li>
-              <span class="ls-agenda-icon">🔍</span>
-              <div>
-                <strong>Beyond One Job Portal</strong>
-                <span>Underrated portals, company career pages &amp; AI form-fill tools</span>
-              </div>
-            </li>
-            <li>
-              <span class="ls-agenda-icon">🤝</span>
-              <div>
-                <strong>Networking That Actually Works</strong>
-                <span>Build the connections that lead to referrals, not just applications</span>
-              </div>
-            </li>
-            <li>
-              <span class="ls-agenda-icon">💬</span>
-              <div>
-                <strong>Open Q&amp;A</strong>
-                <span>Bring your questions — real answers from real industry experience</span>
-              </div>
-            </li>
-          </ul>
-
           <div class="ls-actions">
             <a href="career-guidance.html" class="btn btn-primary">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               View Full Session Content
             </a>
-            <a href="mailto:techserydotcom@gmail.com?subject=Limerick Tech Chat — Reserve Spot" class="btn btn-outline ls-btn-outline">
+            <button class="btn btn-outline ls-btn-outline" onclick="document.getElementById('techChatModal').classList.add('open')">
               Reserve Your Spot
-            </a>
+            </button>
           </div>
         </div>
 
         <div class="ls-details-panel" aria-label="Event details">
           <div class="ls-detail-card">
-            <div class="ls-detail-row">
-              <span class="ls-detail-icon">📅</span>
-              <div>
-                <span class="ls-detail-label">Date</span>
-                <span class="ls-detail-val">Saturday, 20 June 2026</span>
-              </div>
-            </div>
-            <div class="ls-detail-row">
-              <span class="ls-detail-icon">📍</span>
-              <div>
-                <span class="ls-detail-label">Location</span>
-                <span class="ls-detail-val">Limerick, Ireland</span>
-              </div>
-            </div>
-            <div class="ls-detail-row">
-              <span class="ls-detail-icon">🎟️</span>
-              <div>
-                <span class="ls-detail-label">Entry</span>
-                <span class="ls-detail-val">Free — Limited Seats</span>
-              </div>
-            </div>
-            <div class="ls-detail-row">
-              <span class="ls-detail-icon">👤</span>
-              <div>
-                <span class="ls-detail-label">Host</span>
-                <span class="ls-detail-val">11-Year IT Professional · GM, Limerick</span>
-              </div>
-            </div>
-            <div class="ls-detail-row">
-              <span class="ls-detail-icon">🎯</span>
-              <div>
-                <span class="ls-detail-label">For</span>
-                <span class="ls-detail-val">Tech graduates &amp; aspirants struggling with placements</span>
-              </div>
-            </div>
             <div class="ls-bootcamp-teaser">
               <span class="ls-teaser-label">Coming September 2026</span>
               <p>Techprashan - Frontend Portfolio — 6-week live online program launching soon.</p>
@@ -293,9 +209,6 @@
         <article class="course-card featured" role="listitem" id="featured-course" data-category="basics">
           <div class="course-card-banner" style="background:linear-gradient(90deg,#16a34a,#22c55e);"></div>
           <div class="course-card-body">
-            <div class="course-meta">
-              <span class="badge badge-featured">⭐ Featured · Enrolling Now</span>
-            </div>
             <div class="course-meta">
               <span class="badge badge-basics">Basics</span>
               <span class="course-duration">
@@ -486,7 +399,7 @@
           <div class="why-icon">🏭</div>
           <h4>Industry-Led Teaching</h4>
           <p>Learn from an active IT professional with 12+ years of real-world experience at top-tier companies.
-             <a href="founder.html">Meet the presenter →</a></p>
+             <a href="founder.html">Meet the trainer →</a></p>
         </div>
         <div class="why-card">
           <div class="why-icon">🛠️</div>
@@ -517,14 +430,14 @@
     <div class="container">
       <h2 id="cta-heading">Ready to Take Your First Step?</h2>
       <p>
-        Join the upcoming <strong>Techprashan - Frontend Portfolio</strong>
-        starting September 2025. Seats are limited.
+        Join the upcoming <strong>Limerick Tech Chat</strong>
+        this Saturday. Seats are limited.
       </p>
       <div class="cta-actions">
-        <a href="#featured-course" class="btn btn-primary">
+        <button class="btn btn-primary" onclick="document.getElementById('techChatModal').classList.add('open')">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           Register Your Interest
-        </a>
+        </button>
         <a href="#courses" class="btn btn-outline">See All Courses</a>
       </div>
     </div>
@@ -580,6 +493,33 @@
       to   { opacity: 1; transform: translateY(0); }
     }
   </style>
+
+  <!-- ======================================================
+       TECH CHAT ENROLLMENT MODAL
+  ====================================================== -->
+  <div class="modal-overlay" id="techChatModal" role="dialog" aria-modal="true" aria-labelledby="techChatModalTitle">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2 id="techChatModalTitle">Reserve Your Spot — Limerick Tech Chat</h2>
+        <button class="modal-close" onclick="document.getElementById('techChatModal').classList.remove('open')" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-loader" id="techChatFormLoader">
+        <div class="modal-spinner"></div>
+        <p>Loading form&hellip;</p>
+      </div>
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSf1AuiK_y97QD5kKgovoYYYQsAbdeGdjlh0hVMuYjYq0dOFMg/viewform?embedded=true"
+        id="techChatFormIframe"
+        width="100%"
+        height="700"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        title="Limerick Tech Chat Enrollment Form"
+        style="display:none"
+        onload="document.getElementById('techChatFormLoader').style.display='none'; this.style.display='block';">Loading&hellip;</iframe>
+    </div>
+  </div>
 
   <!-- ======================================================
        REGISTER INTEREST MODAL
@@ -718,7 +658,7 @@
 
   <script>
     // Close modals on backdrop click
-    ['interestModal', 'connectingDotsModal', 'devopsModal', 'sreModal', 'aiBasicsModal'].forEach(function(id) {
+    ['techChatModal', 'interestModal', 'connectingDotsModal', 'devopsModal', 'sreModal', 'aiBasicsModal'].forEach(function(id) {
       document.getElementById(id).addEventListener('click', function(e) {
         if (e.target === this) this.classList.remove('open');
       });
@@ -726,6 +666,7 @@
     // Close modals on Escape key
     document.addEventListener('keydown', function(e) {
       if (e.key === 'Escape') {
+        document.getElementById('techChatModal').classList.remove('open');
         document.getElementById('interestModal').classList.remove('open');
         document.getElementById('connectingDotsModal').classList.remove('open');
         document.getElementById('devopsModal').classList.remove('open');

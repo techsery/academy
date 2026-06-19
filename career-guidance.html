@@ -33,10 +33,10 @@
           <span aria-hidden="true">›</span>
           <span>Career Guidance</span>
         </div>
-        <div class="cg-session-pill">
+        <button class="cg-session-pill" onclick="document.getElementById('techChatModal').classList.add('open')" style="font:inherit;cursor:pointer;">
           <span class="cg-live-dot"></span>
-          Tech Chat Session · Limerick
-        </div>
+          Tech Chat Session
+        </button>
         <h1 id="cg-hero-heading">
           Beyond the Degree:<br />
           <span class="cg-hero-accent">Get the Career You Deserve</span>
@@ -44,7 +44,7 @@
         <p class="cg-hero-sub">
           Technical skills get you to the interview table. These strategies get you
           through the door — and help you build a career that grows with you.
-          Practical advice from 11+ years in the industry.
+          Practical advice from 12+ years in the industry.
         </p>
 
         <!-- Quick jump nav -->
@@ -225,8 +225,7 @@
     <div class="container">
       <h2 id="cg-cta-heading">Need Personal Assistance?</h2>
       <p>
-        Want to work through these four areas <strong>one-to-one</strong> with an
-        industry professional? We'll go through your personal branding, resume,
+        Want to work through these four areas and more <strong>one-to-one</strong>? We'll go through your personal branding, resume,
         job search strategy, and networking approach together — tailored to
         <em>your</em> goals, your profile, and your target roles.
         This is a <strong>paid 1:1 support service</strong>.
@@ -245,6 +244,33 @@
        FOOTER
   ====================================================== -->
   <div id="site-footer"></div>
+
+  <!-- ======================================================
+       TECH CHAT ENROLLMENT MODAL
+  ====================================================== -->
+  <div class="modal-overlay" id="techChatModal" role="dialog" aria-modal="true" aria-labelledby="techChatModalTitle">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2 id="techChatModalTitle">Reserve Your Spot — Limerick Tech Chat</h2>
+        <button class="modal-close" onclick="document.getElementById('techChatModal').classList.remove('open')" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-loader" id="techChatFormLoader">
+        <div class="modal-spinner"></div>
+        <p>Loading form&hellip;</p>
+      </div>
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSf1AuiK_y97QD5kKgovoYYYQsAbdeGdjlh0hVMuYjYq0dOFMg/viewform?embedded=true"
+        id="techChatFormIframe"
+        width="100%"
+        height="700"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        title="Limerick Tech Chat Enrollment Form"
+        style="display:none"
+        onload="document.getElementById('techChatFormLoader').style.display='none'; this.style.display='block';">Loading&hellip;</iframe>
+    </div>
+  </div>
 
   <!-- ======================================================
        1:1 CAREER GUIDANCE — REGISTER INTEREST MODAL
@@ -292,11 +318,17 @@
     sections.forEach(s => observer.observe(s));
 
     // Close modal on backdrop click or Escape
+    document.getElementById('techChatModal').addEventListener('click', function(e) {
+      if (e.target === this) this.classList.remove('open');
+    });
     document.getElementById('cgModal').addEventListener('click', function(e) {
       if (e.target === this) this.classList.remove('open');
     });
     document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') document.getElementById('cgModal').classList.remove('open');
+      if (e.key === 'Escape') {
+        document.getElementById('techChatModal').classList.remove('open');
+        document.getElementById('cgModal').classList.remove('open');
+      }
     });
   </script>
 

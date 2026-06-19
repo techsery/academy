@@ -52,7 +52,7 @@
     '      <li><a href="' + p + '#career-guidance"' + (isCareerGuidance ? ' class="active"' : '') + '>Career Guidance</a></li>',
     '      <li><a href="founder.html"'         + (isFounder         ? ' class="active"' : '') + '>Meet the Founder</a></li>',
     '      <li><a href="' + p + '#why-techsery">About</a></li>',
-    '      <li><a href="' + p + '#featured-course" class="nav-cta">Enroll Now</a></li>',
+    '      <li><a href="' + (isHome ? 'javascript:void(0)' : 'index.html') + '" class="nav-cta"' + (isHome ? ' onclick="document.getElementById(\'techChatModal\').classList.add(\'open\')"' : '') + '>Enroll Now</a></li>',
     '    </ul>',
     '  </div>',
     '</nav>'
@@ -90,8 +90,6 @@
     '        <ul>',
     '          <li><a href="index.html#second-innings">SecondInnings</a></li>',
     '          <li><a href="career-guidance.html">Career Guidance</a></li>',
-    '          <li><a href="career-guidance.html#resume-tailoring">Resume Building</a></li>',
-    '          <li><a href="career-guidance.html#networking">Networking</a></li>',
     '        </ul>',
     '      </div>',
     '',
