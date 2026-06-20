@@ -293,6 +293,30 @@ h1, h2, h3, h4 {
   50%       { opacity: .5; transform: scale(1.4); }
 }
 
+.cg-session-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.22);
+  color: #bae6fd;
+  font-size: .78rem;
+  font-weight: 600;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+}
+
+.cg-live-dot {
+  width: 7px;
+  height: 7px;
+  background: #34d399;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
 .hero h1 {
   font-size: clamp(2rem, 4.5vw, 3.1rem);
   color: #fff;
