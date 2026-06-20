@@ -165,6 +165,18 @@ h1, h2, h3, h4 {
 
 .brand {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-icon {
+  height: 36px;
+  width: auto;
+}
+
+.brand-text {
+  display: flex;
   flex-direction: column;
   line-height: 1.1;
 }
@@ -940,6 +952,9 @@ h1, h2, h3, h4 {
 
 .footer-brand .brand-tagline {
   color: rgba(255,255,255,.5);
+}
+
+.footer-brand .brand {
   margin-bottom: 16px;
 }
 
