@@ -490,6 +490,13 @@
         document.getElementById('coursesEmpty').style.display = visible === 0 ? '' : 'none';
       });
     });
+
+    // ── Activate filter from URL param (e.g. ?filter=basics) ──
+    const urlFilter = new URLSearchParams(window.location.search).get('filter');
+    if (urlFilter) {
+      const targetTab = document.querySelector('.cat-tab[data-filter="' + urlFilter + '"]');
+      if (targetTab) { targetTab.click(); }
+    }
   </script>
 
   <style>
