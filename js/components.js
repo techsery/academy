@@ -52,7 +52,7 @@
     '      <li><a href="' + p + '#career-guidance"' + (isCareerGuidance ? ' class="active"' : '') + '>Career Guidance</a></li>',
     '      <li><a href="founder.html"'         + (isFounder         ? ' class="active"' : '') + '>Meet the Founder</a></li>',
     '      <li><a href="' + p + '#why-techsery">About</a></li>',
-    '      <li><a href="javascript:void(0)" class="nav-cta" onclick="document.getElementById(\'techChatModal\').classList.add(\'open\')">Enroll Now</a></li>',
+    '      <li><a href="javascript:void(0)" class="nav-cta" onclick="document.getElementById(\'techChatModal\').classList.add(\'open\')">Reserve Your Spot</a></li>',
     '    </ul>',
     '  </div>',
     '</nav>'
