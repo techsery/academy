@@ -1249,6 +1249,36 @@ h1, h2, h3, h4 {
   to { transform: rotate(360deg); }
 }
 
+.modal-batch-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: #fffbeb;
+  border: 1px solid #fcd34d;
+  border-left: 4px solid #f59e0b;
+  border-radius: 6px;
+  padding: 11px 14px;
+  margin: 12px 20px 0;
+  flex-shrink: 0;
+}
+
+.modal-batch-notice .batch-icon {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  flex-shrink: 0;
+}
+
+.modal-batch-notice p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #92400e;
+  line-height: 1.5;
+}
+
+.modal-batch-notice p strong {
+  color: #78350f;
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .hero .container,
