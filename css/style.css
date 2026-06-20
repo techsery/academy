@@ -347,6 +347,16 @@ h1, h2, h3, h4 {
   line-height: 1.7;
 }
 
+.hero-sub a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.hero-sub a:hover {
+  opacity: .8;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -470,6 +480,16 @@ h1, h2, h3, h4 {
   font-size: 1.3rem;
   font-weight: 800;
   color: #fde68a;
+}
+.hero-card-presenter-link {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,.75);
+  text-decoration: underline;
+}
+.hero-card-presenter-link:hover {
+  color: #fff;
 }
 
 /* ---------- Trust Bar ---------- */
@@ -1053,6 +1073,16 @@ h1, h2, h3, h4 {
   line-height: 1.75;
   margin-bottom: 30px;
   max-width: 580px;
+}
+
+.ls-lead a {
+  color: var(--primary);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.ls-lead a:hover {
+  opacity: .8;
 }
 
 /* Agenda list */
